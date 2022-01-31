@@ -13,7 +13,7 @@ namespace BasicCore
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 to select Replace String\n" + "Enter 2 to Flip a Coin\n" + "Enter 3 to Check For leap Year\n" + "Enter 4 to exit\n");
+                Console.WriteLine("Enter 1 to select Replace String\n" + "Enter 2 to Flip a Coin\n" + "Enter 3 to Check For leap Year\n" +  "Enter 4 to Calculate the Power of 2\n" + "Enter 5 to exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,6 +30,10 @@ namespace BasicCore
                         leapYear.Leap();
                         break;
                     case 4:
+                        PowerOf2 powerOf2 = new PowerOf2();
+                        powerOf2.Power2();
+                        break;
+                    case 5:
                         flag = false;
                         break;
 
