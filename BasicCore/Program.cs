@@ -13,7 +13,7 @@ namespace BasicCore
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 to select Replace String\n" + "Enter 2 to Flip a Coin\n" + "Enter 3 to Check For leap Year\n" +  "Enter 4 to Calculate the Power of 2\n" + "Enter 5 to exit\n");
+                Console.WriteLine("Enter 1 to select Replace String\n" + "Enter 2 to Flip a Coin\n" + "Enter 3 to Check For leap Year\n" +  "Enter 4 to Calculate the Power of 2\n" + "Enter 5 to Calculate the Value of Nth Harmonic Number\n" + "Enter 6 to exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -34,6 +34,10 @@ namespace BasicCore
                         powerOf2.Power2();
                         break;
                     case 5:
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
+                        harmonicNumber.Harmonic();
+                        break;
+                    case 6:
                         flag = false;
                         break;
 
