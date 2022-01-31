@@ -13,7 +13,7 @@ namespace BasicCore
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1 to select Replace String\n" + "Enter 2 to exit\n");
+                Console.WriteLine("Enter 1 to select Replace String\n" + "Enter 2 to Flip a Coin\n" + "Enter 3 to exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +22,10 @@ namespace BasicCore
                         replaceString.ReplaceStr();
                         break;
                     case 2:
+                        FlipCoin flipCoin = new FlipCoin();
+                        flipCoin.Toss();
+                        break;
+                    case 3:
                         flag = false;
                         break;
 
